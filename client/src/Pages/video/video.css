@@ -1,0 +1,122 @@
+/* h-full flex justify-center items-center relative mx-2 lg:mx-10 */
+.video-wrapper {
+    height: 88vh;
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 30px;
+}
+
+.video-scalaton{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+}
+
+/* absolute top-10 right-4 z-50 bg-customOrange text-stone-50 py-1 px-2 rounded flex items-center gap-1 */
+.video-selector {
+    position: fixed;
+    top: 65px;
+    right: 40px;
+    z-index: 50;
+    background-color: #fcba03;
+    color: #000000;
+    padding: 3px 6px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.video-input {
+    display: none;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* text-7xl animate-spin text-stone-50 p-3 absolute  */
+
+.loader {
+    font-size: x-large;
+    color: aliceblue;
+    padding: 6px;
+    position: absolute;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.video{
+    width: 100%;
+    height: 100%;
+}
+
+/* <div className="tool-bar absolute bottom-0 left-0 w-full bg-opacity-50  flex justify-center items-end gap-3"> */
+
+.toolbar-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 8px;
+    background-color: #f1eeee7a;
+}
+
+/* my-5 flex flex-col justify-center items-center bg-slate-800 bg-opacity-50 w-full */
+
+.toolbar{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3434347a;
+    width: 98%;
+}
+
+/* text-stone-50 flex justify-between gap-4 items-center px-4 w-full */
+
+.video-timer-container{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    gap: 12px;
+    width: 100%;
+}
+/* w-full cursor-pointer h-2 bg-stone-50 bg-opacity-40 relative rounded-full overflow-hidden */
+.video-timer{
+    width: 100%;
+    cursor: pointer;
+    height: 12px;
+    background-color: #ececec7a;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+}
+/*  -rotate-90 absolute bottom-20 -left-16 accent-stone-50 */
+
+.volume-controller {
+   rotate: -90deg;
+    position: absolute;
+    bottom: 80px;
+    left: -60px;
+}
+
+
+
